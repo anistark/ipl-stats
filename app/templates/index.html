@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IPL Stats - Kumar Anirudha</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <div id="demo">
+        <h1>IPL Stats</h1>
+        <h2>Select a season below to continue</h2>
+        <!-- <select id="select-year" name="select-year">
+            <option value="">Select a year</option>
+            {% for season in seasons %}
+            <option value="{{ season }}">{{ season }}</option>
+            {% endfor %}
+        </select> -->
+
+        <div class="container">
+
+  <!-- Stuff that matters -->
+  <div class="select">
+    <select>
+        <option value="">Select a year</option>
+        {% for season in seasons %}
+        <option value="{{ season }}">{{ season }}</option>
+        {% endfor %}
+    </select>
+  </div>
+  <!-- Stuff that matters end -->
+
+</div>
+
+        <div class="table-responsive-vertical shadow-z-1">
+
+            <table id="table" class="table table-hover table-mc-light-blue">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Stat</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="ID">1</td>
+                        <td data-title="Stat">Top 4 teams in terms of wins</td>
+                        <td data-title="Result" id="winning-teams"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">2</td>
+                        <td data-title="Stat">Which team won the most number of tosses in the season</td>
+                        <td data-title="Result" id="most-toss"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">3</td>
+                        <td data-title="Stat">Which player won the maximum number of Player of the Match awards in the whole season</td>
+                        <td data-title="Result" id="most-player-of-match"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">4</td>
+                        <td data-title="Stat">Which team won max matches in the whole season</td>
+                        <td data-title="Result" id="most-match-winning-team"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">5</td>
+                        <td data-title="Stat">Which location has the most number of wins for the top team</td>
+                        <td data-title="Result" id="most-winning-team-city"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">6</td>
+                        <td data-title="Stat">Which %age of teams decided to bat when they won the toss</td>
+                        <td data-title="Result" id="toss-bat-percent"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">7</td>
+                        <td data-title="Stat">Which location hosted most number of matches</td>
+                        <td data-title="Result" id="city-based"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">8</td>
+                        <td data-title="Stat">Which team won by the highest margin of runs for the season</td>
+                        <td data-title="Result" id="largest-run-winners"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">9</td>
+                        <td data-title="Stat">Which team won by the highest number of wickets for the season</td>
+                        <td data-title="Result" id="highest-wicket-winners"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="ID">10</td>
+                        <td data-title="Stat">How many times has a team won the toss and the match</td>
+                        <td data-title="Result" id="team-win-toss-match"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+</body>
+
+</html>
