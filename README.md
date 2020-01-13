@@ -20,6 +20,6 @@ Working Directory = `cd ipl`
 
 `docker run -d --name ani_ipl_stat -p 8000:8000 ani_ipl`
 
-<img src="https://i.imgur.com/JN0r03V.png" width="450">
+<img src="https://i.imgur.com/JN0r03V.png" width="100%">
 
 [Open web browser](http://localhost:8000)
