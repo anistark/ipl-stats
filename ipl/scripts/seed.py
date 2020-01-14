@@ -1,6 +1,6 @@
 import sys, os
 import psycopg2, csv
-import config
+import ../config
 
 os.system('clear')
 
